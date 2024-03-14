@@ -1,15 +1,15 @@
-#Linked List:
+# Linked List:
 
 The LinkedList stores its items in "containers." The list has a link to the first container and each container has a link to the next container in the list. To add an element to the list, the element is placed into a new container and that container is linked to one of the other containers in the list.
-##Flow of linked list:
+## Flow of linked list:
 
 ![img.png](img.png)
 Image source:https://www.geeksforgeeks.org/data-structures/linked-list/
 
-##Description::
+## Description::
  Implemented multiple methods for Linked List
 
-###Iterate Linked List:
+### Iterate Linked List:
 ```java
 //creating method to iterate Linked List
     public void pintList(){
@@ -21,7 +21,7 @@ Image source:https://www.geeksforgeeks.org/data-structures/linked-list/
     }
 ```
 
-###Apend Linked List:
+### Apend Linked List:
 ```java
 public void append(int value){
         Node newNode= new Node(value);
@@ -37,7 +37,7 @@ public void append(int value){
         index++;
     }
 ```
-###Prepend Linked List:
+### Prepend Linked List:
 ```java
 public void prepend(int value){
         //task: to remove element from first
@@ -58,7 +58,7 @@ public void prepend(int value){
 ```
 
 
-###Remove first from Linked List:
+### Remove first from Linked List:
 ```java
 public Node removeFirst(){
         //edge case: in linked list, element could be single
@@ -75,7 +75,7 @@ public Node removeFirst(){
     }
 ```
 
-###Remove last from Linked List:
+### Remove last from Linked List:
 ```java
 public Node removeLast(){
         // checking if list is null
@@ -105,7 +105,7 @@ public Node removeLast(){
         return current;
     }
 ```
-###Get by index from Linked List:
+### Get by index from Linked List:
 ```java
     public Node get(int index ){
 
@@ -124,7 +124,7 @@ public Node removeLast(){
     }
 ```
 
-###Set at index in Linked List:
+### Set at index in Linked List:
 ```java
     public boolean set(int index,int value){
         Node current=get(index);
@@ -136,7 +136,7 @@ public Node removeLast(){
     }
 ```
 
-###Reverse the Linked List:
+### Reverse the Linked List:
 ```java
    public void reverse(){
         Node temp= head;
@@ -156,7 +156,7 @@ public Node removeLast(){
         }
 ```
 
-###Remove at any index of Linked List:
+### Remove at any index of Linked List:
 ```java
    public Node remove(int index){
         //remove from first index
@@ -184,7 +184,7 @@ public Node removeLast(){
         return selfNode;
     }
 ```
-###Insert at any index of Linked List:
+### Insert at any index of Linked List:
 ```java
    public boolean insert (int index, int value){
        if (index<0 || index>this.index){ return false;}
